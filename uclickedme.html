@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Jump for Joy</title>
+    <link href="mystyle.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+    <h2>Flowers for Sale</h2>
+    </div>
+    <div id="main">
+        <div class="guess_box"><img src="images/flower1.jpg"/></div>
+        <div class="guess_box"><img src="images/flower2.jpg"/></div>
+        <div class="guess_box"><img src="images/flower3.jpg"/></div>
+        <div class="guess_box"><img src="images/flower4.jpg"/></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script >
+    $(document).ready(function() {
+        $(".guess_box").click(function() {
+            alert("You clicked me.");
+            $(".guess_box").each( function(){
+             $(this).unbind('click');
+            });//end click function
+        });//end doc ready
+
+});
+    </script>
+</body>
+</html

@@ -1,0 +1,17 @@
+div {
+    float: left;
+    height: 400px;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+}
+
+#main {
+    height: 400px;
+}
+
+.guess_box {
+    height: 245px;
+}
